@@ -1,1 +1,26 @@
-test
+Overview
+This Bash script reorganizes folders from a source directory and copies them into a destination directory in a year-month-day format. The script works by iterating over month-based folders (from 01 to 12) and their corresponding day subfolders, then it copies them into a destination directory with the new format.
+
+Prerequisites
+Ensure you have the correct permissions to access and modify the following directories:
+
+Source directory: /opt/Folder
+Destination directory: /opt/Reorder
+You can modify the script if your source and destination directories are different.
+
+Directory Structure
+Source Directory Structure: The source directory is expected to have the following format:
+/opt/Folder/
+  ├── 01/
+  │   ├── 01/
+  │   ├── 02/
+  │   └── ...
+  ├── 02/
+  └── ...
+Each subdirectory inside the folders 01 to 12 should represent a day.
+
+Destination Directory Structure: After running the script, the destination directory will have folders in the format year-month-day:
+/opt/Reorder/
+  ├── 2024-01-01/
+  ├── 2024-01-02/
+  └── ...
