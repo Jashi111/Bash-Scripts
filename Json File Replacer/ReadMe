@@ -14,7 +14,7 @@ The script uses sed for making changes, so make sure sed is installed and availa
 
 Usage
 Run the script by passing one of the following arguments:
-./script_name.sh [ARGUMENT]
+./JsonFileReplacer.sh [ARGUMENT]
 
 Arguments
 SP_MSG1: Updates the audio file paths in the configuration to the values associated with SP_MSG_Incident_1.
