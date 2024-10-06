@@ -1,1 +1,22 @@
-test
+Overview
+This Bash script updates specific values in two JSON configuration files used for IVR-related operations. The script allows you to update audio file paths for different languages (Sinhala, Tamil, and English) and change a specific mapping in the configuration. It also provides an option to revert the changes back to their original state.
+
+JSON Files Modified
+functions.config.json: Contains the configuration for the audio files in different languages.
+functions.map.json: Contains a mapping related to the IVR functionality.
+Prerequisites
+
+Ensure you have the correct permissions to modify the following files:
+
+/var/www/html/IVR/HUTCH_V5/Prepaid/functions.config.json
+/var/www/html/IVR/HUTCH_V5/Prepaid/functions.map.json
+The script uses sed for making changes, so make sure sed is installed and available in your environment.
+
+Usage
+Run the script by passing one of the following arguments:
+./script_name.sh [ARGUMENT]
+
+Arguments
+SP_MSG1: Updates the audio file paths in the configuration to the values associated with SP_MSG_Incident_1.
+SP_MSG2: Updates the audio file paths in the configuration to the values associated with SP_MSG_Incident_2.
+Original: Reverts the changes made by the script and restores the original mapping in functions.map.json.
